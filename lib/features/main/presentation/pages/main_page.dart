@@ -15,7 +15,8 @@ class MainPage extends StatelessWidget {
       backgroundColor: Colors.black.withOpacity(1),
       body: Container(
         decoration: const BoxDecoration(
-            image: DecorationImage(image: AssetImage(mainBack), fit: BoxFit.cover)),
+            image: DecorationImage(
+                image: AssetImage(mainBack), fit: BoxFit.cover)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -71,7 +72,6 @@ class MainPage extends StatelessWidget {
                 const SizedBox(
                   height: sizeMedium,
                 ),
-                CustomButton(text: 'Kasih Rating', onPressed: () {}),
               ],
             ),
             const Text(

@@ -8,7 +8,10 @@ class KhdoamResultWidget extends StatefulWidget {
   final String nama;
   final String quotes;
   const KhdoamResultWidget(
-      {super.key, required this.nama, required this.hasil, required this.quotes});
+      {super.key,
+      required this.nama,
+      required this.hasil,
+      required this.quotes});
 
   @override
   State<KhdoamResultWidget> createState() => _KhdoamResultWidgetState();
@@ -24,7 +27,8 @@ class _KhdoamResultWidgetState extends State<KhdoamResultWidget> {
         ),
         const Text(
           'Hasil Cek Khodam',
-          style: TextStyle(color: Colors.white, fontSize: 23, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              color: Colors.white, fontSize: 23, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),
         const SizedBox(
@@ -41,7 +45,8 @@ class _KhdoamResultWidgetState extends State<KhdoamResultWidget> {
         const Text(
           textAlign: TextAlign.center,
           'Quotes untuk hari ini:',
-          style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
         ),
         Text(
           '${widget.quotes} ',
@@ -53,10 +58,6 @@ class _KhdoamResultWidgetState extends State<KhdoamResultWidget> {
         ),
         SizedBox(
           height: 1.cm,
-        ),
-        const Icon(
-          Icons.share,
-          color: darkButtonColor,
         ),
         SizedBox(
           height: 1.cm,

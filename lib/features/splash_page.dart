@@ -16,9 +16,9 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 5), () {
-      precacheImage(const AssetImage(mainBack), context)
-          .then((value) => {Navigator.pushReplacementNamed(context, MainPage.routeName)});
+    Timer(const Duration(seconds: 3), () {
+      precacheImage(const AssetImage(mainBack), context).then((value) =>
+          {Navigator.pushReplacementNamed(context, MainPage.routeName)});
     });
   }
 
